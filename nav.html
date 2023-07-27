@@ -1,39 +1,49 @@
-<div class="navbar bg-base-100">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <label tabindex="0" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-        </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Item 1</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
-      <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+ <!-- navbar -->
+ <nav class="container m-auto mt-5">
+    <div class="navbar lg:bg-[#F85559] rounded-full flex lg:flex-row flex-row-reverse">
+        <div class="navbar-start flex justify-end">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <div class=" ">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] pr-16 shadow bg-base-100 rounded-box w-52 ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class=" hidden lg:flex md:text-white">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gap-5 justify-center lg:w-1/2 w-full -ml-52 lg:-ml-0 md:-ml-0">
+            <img class="w-8 lg:w-10" src="./images/logo.png" alt="">
+            <a class="text-xl lg:text-3xl font-bold lg:text-white sm:text-black">Fruit Burst</a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="hidden md:block">
+                <input type="text" placeholder="Search"
+                    class="input input-bordered lg:w-80 md:w-40 rounded-full" />   
+            </div>
+            <div class="hidden md:block absolute px-7"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Item 1</a></li>
-        <li tabindex="0">
-          <details>
-            <summary>Parent</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
     </div>
-    <div class="navbar-end">
-      <a class="btn">Button</a>
-    </div>
-  </div>
+</nav>
